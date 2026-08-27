@@ -1,0 +1,37 @@
+{
+  "name": "@goodapp/auth",
+  "version": "0.1.0",
+  "private": false,
+  "license": "MIT",
+  "description": "Het deel van authenticatie dat geen database raakt: wachtwoorden hashen, JWT's tekenen en verifiëren, hersteltokens, en vergelijken in constante tijd.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthiasvienne-boop/goodapp-auth.git"
+  },
+  "homepage": "https://github.com/matthiasvienne-boop/goodapp-auth#readme",
+  "bugs": {
+    "url": "https://github.com/matthiasvienne-boop/goodapp-auth/issues"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test src/*.test.ts",
+    "prepare": "npm run build"
+  },
+  "peerDependencies": {
+    "bcryptjs": ">=2.4.3",
+    "jsonwebtoken": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.7",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
